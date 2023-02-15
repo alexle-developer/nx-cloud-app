@@ -15,3 +15,21 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
+<br><br>
+
+# How to create this application from scratch?
+
+1. Create nx workspace
+
+   > npx create-nx-workspace@latest
+   >
+   > select the **Integrated monorepo** option
+
+2. Install the Angular schematic to create Angular application
+
+   > npm install @nrwl/angular
+
+3. Create a new Angular applicatio
+   > nx generate @nrwl/angular:app cloud-portal --routing
+   >
+   > select **SASS** for stylesheet
