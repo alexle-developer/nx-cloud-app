@@ -54,4 +54,14 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
    > - CREATE libs/layout/src/lib/lib.routes.ts
 
 5. Add navbar component to the layout lib
+
    > npx nx generate @nrwl/angular:component components/navbar --project=layout --export
+
+6. Add pages lib
+
+   > npx nx generate @nrwl/angular:library pages --routing --style=scss
+
+7. Add home & pagenotfound component to the pages lib
+
+   > npx nx generate @nrwl/angular:component components/home --project=pages --export
+   > npx nx generate @nrwl/angular:component components/pagenotfound --project=pages --export
