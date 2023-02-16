@@ -1,3 +1,4 @@
+import {LayoutModule} from '@nx-cloud-app/layout';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
@@ -14,6 +15,7 @@ const rootRoutes: Routes = [
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    LayoutModule,
     RouterModule.forRoot(rootRoutes, {initialNavigation: 'enabledBlocking'}),
   ],
   providers: [],

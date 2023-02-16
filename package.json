@@ -2,7 +2,12 @@
   "name": "nx-cloud-app",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve",
+    "build": "nx build",
+    "test": "nx test",
+    "cp": "nx serve cloud-portal --port 4280 -o"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~15.1.0",

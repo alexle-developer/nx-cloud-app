@@ -36,6 +36,7 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
    > select **SASS** for stylesheet
 
 4. Add Layout lib
+
    > npx nx generate @nrwl/angular:library layout --routing --style=scss
    >
    > - CREATE libs/layout/README.md
@@ -51,3 +52,6 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
    > - CREATE libs/layout/jest.config.ts
    > - CREATE libs/layout/src/test-setup.ts
    > - CREATE libs/layout/src/lib/lib.routes.ts
+
+5. Add navbar component to the layout lib
+   > npx nx generate @nrwl/angular:component components/navbar --project=layout --export
