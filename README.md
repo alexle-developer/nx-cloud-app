@@ -29,7 +29,25 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
 
    > npm install @nrwl/angular
 
-3. Create a new Angular applicatio
+3. Create a new Angular application
+
    > nx generate @nrwl/angular:app cloud-portal --routing
    >
    > select **SASS** for stylesheet
+
+4. Add Layout lib
+   > npx nx generate @nrwl/angular:library layout --routing --style=scss
+   >
+   > - CREATE libs/layout/README.md
+   > - CREATE libs/layout/tsconfig.lib.json
+   > - CREATE libs/layout/README.md
+   > - CREATE libs/layout/tsconfig.lib.json
+   > - CREATE libs/layout/tsconfig.spec.json
+   > - CREATE libs/layout/src/index.ts
+   > - CREATE libs/layout/src/lib/layout.module.ts
+   > - CREATE libs/layout/project.json
+   > - UPDATE tsconfig.base.json
+   > - CREATE libs/layout/tsconfig.json
+   > - CREATE libs/layout/jest.config.ts
+   > - CREATE libs/layout/src/test-setup.ts
+   > - CREATE libs/layout/src/lib/lib.routes.ts
