@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@nx-cloud-app/layout": ["libs/layout/src/index.ts"],
-      "@nx-cloud-app/pages": ["libs/pages/src/index.ts"]
+      "@nx-cloud-app/pages": ["libs/pages/src/index.ts"],
+      "@nx-cloud-app/products": ["libs/products/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

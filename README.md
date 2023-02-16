@@ -65,3 +65,7 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
 
    > npx nx generate @nrwl/angular:component components/home --project=pages --export
    > npx nx generate @nrwl/angular:component components/pagenotfound --project=pages --export
+
+8. Add products lib
+
+   > npx nx generate @nrwl/angular:library products --routing
