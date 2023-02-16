@@ -1,3 +1,4 @@
-import { Route } from '@angular/router';
+//import { Route } from '@angular/router';
 
-export const appRoutes: Route[] = [];
+// move it to app.module.ts
+//export const appRoutes: Route[] = [];

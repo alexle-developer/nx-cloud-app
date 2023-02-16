@@ -1,3 +1,5 @@
+
+import {HomeComponent, PagenotfoundComponent} from '@nx-cloud-app/pages';
 import {LayoutModule} from '@nx-cloud-app/layout';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
@@ -6,8 +8,9 @@ import {AppComponent} from './app.component';
 import {RouterModule, Routes} from '@angular/router';
 
 
-const rootRoutes: Routes = [
-  // paths
+const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: '**', component: PagenotfoundComponent}
 ];
 
 
@@ -16,7 +19,7 @@ const rootRoutes: Routes = [
   imports: [
     BrowserModule,
     LayoutModule,
-    RouterModule.forRoot(rootRoutes, {initialNavigation: 'enabledBlocking'}),
+    RouterModule.forRoot(appRoutes, {initialNavigation: 'enabledBlocking'}),
   ],
   providers: [],
   bootstrap: [AppComponent],
