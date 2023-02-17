@@ -1,15 +1,18 @@
 
-import {HomeComponent, PagenotfoundComponent} from '@nx-cloud-app/pages';
+
 import {LayoutModule} from '@nx-cloud-app/layout';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {RouterModule, Routes} from '@angular/router';
 
 import {AppComponent} from './app.component';
-import {RouterModule, Routes} from '@angular/router';
+import {HomeComponent, PagenotfoundComponent} from '@nx-cloud-app/pages';
+
 
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', pathMatch: 'full', redirectTo: 'home'},
+  {path: 'home', component: HomeComponent},
   {path: '**', component: PagenotfoundComponent}
 ];
 
