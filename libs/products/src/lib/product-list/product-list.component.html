@@ -2,8 +2,18 @@
   <div class="card-header">
     {{pageTitle}}
   </div>
-  <div class="card-body">
-
+  <div class="card-body"
+       *ngIf="products?.length">
+    <div class="list-group">
+      <button class="list-group-item list-group-item-action rounded-0"
+              *ngFor="let product of products"
+              [ngClass]="{'active': product?.id === selectedProduct?.id}"
+              (click)="productSelected(product)">{{ product.productName }}
+        <ng-container *ngIf="displayCode">
+          ({{ product.productCode }})
+        </ng-container>
+      </button>
+    </div>
   </div>
   <div class="card-footer">
     <div class="row">
@@ -17,8 +27,7 @@
         </label>
       </div>
       <div class="col-md-4 text-right">
-        <button class="btn btn-primary"
-                (click)="newProduct()">
+        <button class="btn btn-primary">
           Add
         </button>
       </div>

@@ -1,6 +1,5 @@
 import {InMemoryDbService} from 'angular-in-memory-web-api';
-
-import {Product} from './product.model';
+import {Product} from '@nx-cloud-app/products';
 
 export class ProductData implements InMemoryDbService {
 

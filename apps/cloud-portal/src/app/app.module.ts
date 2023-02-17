@@ -1,3 +1,4 @@
+import {HttpClientModule} from '@angular/common/http';
 // import modules
 import {ProductData} from '@nx-cloud-app/products';
 import {LayoutModule} from '@nx-cloud-app/layout';
@@ -19,8 +20,9 @@ import {AppComponent} from './app.component';
   imports: [
     BrowserModule,
     LayoutModule,
-    HttpClientInMemoryWebApiModule.forRoot(ProductData),
     AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(ProductData)
   ],
   providers: [],
   bootstrap: [AppComponent],
