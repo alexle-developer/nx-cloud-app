@@ -60,3 +60,11 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
 
    > npx nx generate @nrwl/angular:component ProductView --export --project=products
    > --path=libs/products/src/lib --skipSelector --skipTests --style=scss
+
+10. Add product-list component to products lib
+
+    > npx nx generate @nrwl/angular:component ProducList --export --project=products --path=libs/products/src/lib --style=scss
+
+11. Add product-edit component to products lib
+
+    > npx nx generate @nrwl/angular:component ProductEdit --export --project=products --path=libs/products/src/lib --style=scss
