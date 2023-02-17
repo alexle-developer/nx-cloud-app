@@ -33,25 +33,11 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
 
    > nx generate @nrwl/angular:app cloud-portal --routing
    >
-   > select **SASS** for stylesheet
+   > select **SCSS** for stylesheet
 
 4. Add Layout lib
 
    > npx nx generate @nrwl/angular:library layout --routing --style=scss
-   >
-   > - CREATE libs/layout/README.md
-   > - CREATE libs/layout/tsconfig.lib.json
-   > - CREATE libs/layout/README.md
-   > - CREATE libs/layout/tsconfig.lib.json
-   > - CREATE libs/layout/tsconfig.spec.json
-   > - CREATE libs/layout/src/index.ts
-   > - CREATE libs/layout/src/lib/layout.module.ts
-   > - CREATE libs/layout/project.json
-   > - UPDATE tsconfig.base.json
-   > - CREATE libs/layout/tsconfig.json
-   > - CREATE libs/layout/jest.config.ts
-   > - CREATE libs/layout/src/test-setup.ts
-   > - CREATE libs/layout/src/lib/lib.routes.ts
 
 5. Add navbar component to the layout lib
 
@@ -69,3 +55,8 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
 8. Add products lib
 
    > npx nx generate @nrwl/angular:library products --routing
+
+9. Add product-view component to products lib
+
+   > npx nx generate @nrwl/angular:component ProductView --export --project=products
+   > --path=libs/products/src/lib --skipSelector --skipTests --style=scss
