@@ -1,4 +1,5 @@
-import {ProductsService, Product} from '@nx-cloud-app/products';
+import {ProductService} from '../services/product.service';
+import {Product} from '../product.model';
 import {Component, OnInit} from '@angular/core';
 
 
@@ -18,7 +19,7 @@ export class ProductListComponent implements OnInit {
   // Used to highlight the selected product in the list
   selectedProduct: Product | null = null;
 
-  constructor (private productService: ProductsService) {
+  constructor (private productService: ProductService) {
     this.displayCode = false;
 
   }
