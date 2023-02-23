@@ -9,7 +9,7 @@ const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {
     path: 'products',
-    loadChildren: () => import('libs/products/src/lib/products.module').then(m => m.ProductsModule)
+    loadChildren: () => import('@nx-cloud-app/products').then(m => m.ProductsModule)
   },
   {path: '**', component: PagenotfoundComponent}
 ];
