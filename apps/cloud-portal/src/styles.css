@@ -1,5 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 
+body {
+  margin: 0;
+}
+
+p {
+  font-size: medium;
+}
+
+.img-thumbnail {
+  border: 0;
+}
+
+.main-content {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* stretch the UI 800 pixel vertically */
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  height: 800px;
+}
+
 /* Responsive Top Navbar - use this Navbar */
 .form-control-dark {
   border-color: var(--bs-gray);
