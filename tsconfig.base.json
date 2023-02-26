@@ -17,7 +17,8 @@
     "paths": {
       "@nx-cloud-app/layout": ["libs/layout/src/index.ts"],
       "@nx-cloud-app/pages": ["libs/pages/src/index.ts"],
-      "@nx-cloud-app/products": ["libs/products/src/index.ts"]
+      "@nx-cloud-app/products": ["libs/products/src/index.ts"],
+      "@nx-cloud-app/products-ngrx": ["libs/products-ngrx/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
