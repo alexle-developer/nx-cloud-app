@@ -1,23 +1,37 @@
-<div class="row main-content ">
-
+<div class="row my-4 main-content">
   <div class="col-sm">
     <div class="card">
       <div class="card-header">
         <h1>Overview</h1>
       </div>
       <div class="card-body">
-        <p>
-          The primary purpose of the Nx-Cloud-App application is to demonstrate the power of leveraging <strong>Nx
-            Monorepo</strong> with Angular <strong>NgRx</strong> state management. Therefore, we are focusing on
-          something other than building components and structures for the Nx-Cloud-App.
-        </p>
-        <p>
-          To demonstrate NgRx, our sample application must be complex enough to have state management requirements but
-          simple enough to implement those requirements within a reasonable amount of time. Therefore, we start with a
-          simple Angular reactive form <strong>"Products"</strong> application that does not use NgRx.
-        </p>
-        <p>Our intention is to replace the state management and component interactions with NgRx for <strong>Products
-            NgRx</strong>.</p>
+        <div class="row">
+          <div class="col-sm-8">
+            <p class="card-title">
+              The primary purpose of the Nx-Cloud-App application is to demonstrate the power of leveraging <strong>Nx
+                Monorepo</strong> with Angular <strong>NgRx</strong> state management. Therefore, we are focusing on
+              something other than building components and structures for the Nx-Cloud-App.
+            </p>
+            <p>
+              To demonstrate NgRx, our sample application must be complex enough to have state management requirements
+              but simple enough to implement those requirements within a reasonable amount of time. Therefore, we start
+              with
+              a simple Angular reactive application <a [routerLink]="[productsRoute]"
+                 title="Application without NgRx">"Products"</a> that does not
+              use
+              NgRx.
+            </p>
+            <p>Our intention is to replace the state management and component interactions with NgRx for
+              <strong>"Products-NgRx"</strong>&nbsp;<span style="color:darkred">(coming
+                soon)</span>.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <img class="img-thumbnail"
+                 src="/assets/images/monolith-vs-nx.png"
+                 alt="monolith vs. nx repo">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -30,8 +44,8 @@
       </div>
       <div class="card-body">
         <div class="row">
-          <div class="col-sm">
-            <ul class="card-title">
+          <div class="col-sm-6">
+            <ul class="text-small">
               <li>
                 On the left panel, a list of products is displayed.
               </li>
@@ -49,15 +63,19 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm">
+          <div class="col-sm-6">
             <img class="img-thumbnail"
+                 style="width: 100%;"
                  src="/assets/images/products.png"
-                 alt="...">
+                 alt="sample application">
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="row main-content ">
+  <div class="col-sm">
+
   </div>
 </div>

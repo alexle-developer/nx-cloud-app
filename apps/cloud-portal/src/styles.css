@@ -5,7 +5,10 @@ body {
 }
 
 p {
-  font-size: medium;
+  font-size: small;
+}
+.container {
+  display: flexbox;
 }
 
 .img-thumbnail {
@@ -28,7 +31,7 @@ p {
   height: 800px;
 }
 
-/* Responsive Top Navbar - use this Navbar */
+/* Responsive Top Navbar  */
 .form-control-dark {
   border-color: var(--bs-gray);
 }

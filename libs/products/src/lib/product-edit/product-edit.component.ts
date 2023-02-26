@@ -11,7 +11,7 @@ import {ProductService} from '../services/product.service';
 })
 export class ProductEditComponent implements OnInit {
 
-  pageTitle = 'Product Edit';
+  pageTitle = 'Product';
   errorMessage = '';
   productForm!: FormGroup;
   product: Product | null = null;
@@ -77,7 +77,7 @@ export class ProductEditComponent implements OnInit {
       if (product.id === 0) {
         this.pageTitle = 'Add Product';
       } else {
-        this.pageTitle = `Edit Product: ${ product.productName }`;
+        this.pageTitle = `Selected Product: ${ product.productName }`;
       }
 
       // Update the data on the form
