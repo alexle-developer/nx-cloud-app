@@ -68,3 +68,6 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
 11. Add product-edit component to products lib
 
     > npx nx generate @nrwl/angular:component ProductEdit --export --project=products --path=libs/products/src/lib --style=scss
+
+12. Add products-ngrx lib
+    > npx nx generate @nrwl/angular:library products-ngrx --routing

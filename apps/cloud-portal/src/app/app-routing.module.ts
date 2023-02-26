@@ -11,6 +11,10 @@ const appRoutes: Routes = [
     path: 'products',
     loadChildren: () => import('@nx-cloud-app/products').then(m => m.ProductsModule)
   },
+  {
+    path: 'products-ngrx',
+    loadChildren: () => import('@nx-cloud-app/products-ngrx').then(m => m.ProductsNgrxModule)
+  },
   {path: '**', component: PagenotfoundComponent}
 ];
 
