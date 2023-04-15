@@ -17,6 +17,12 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
 <br><br>
 
+# How to run cloud portal application locally?
+
+Run the following command
+
+> c:\\nx-cloud-app> npm run cp
+
 # How to create this application from scratch?
 
 1. Create nx workspace
@@ -71,3 +77,13 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
 
 12. Add products-ngrx lib
     > npx nx generate @nrwl/angular:library products-ngrx --routing
+
+<br>
+
+# Understand Deployment to Google Cloud Platform
+
+- https://www.youtube.com/watch?v=54OOVTNJVmI
+
+- https://www.cs.virginia.edu/~up3f/cs4640/supplement/angular-deployment.html
+
+- https://www.youtube.com/watch?v=Rk8MPrz1sgU&t=808s
